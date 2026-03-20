@@ -1,14 +1,13 @@
-# Use official Tomcat base image
-FROM tomcat:9.0
+FROM nginx:alpine
 
-# Remove default ROOT application
-RUN rm -rf /usr/local/tomcat/webapps/ROOT
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
 
-# Copy generated WAR file into webapps as ROOT
-COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+# Copy project files into nginx html directory
+COPY . /usr/share/nginx/html
 
-# Expose port 8080
-EXPOSE 8080
+# Expose port
+EXPOSE 80
 
-# Start Tomcat
-CMD ["catalina.sh", "run"]
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
