@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet">
+    <style>
+        #bb{
+    background-color: aquamarine;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg{
+    background-color: lightsalmon;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    border-radius: 10px;
+
+    padding: 10px;
+}
+#login{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+}
+.box{
+    border-radius: 15px;
+    padding: 5px;
+}
+#forgot{
+    justify-content: space-between;
+}
+
+    </style>
+</head>
+<body id="bb">
+    <div class="bg">
+        <form class="inner-bg">
+            <h1>Login</h1>
+            <div class="box">
+                <input class="box" type="text" placeholder="Username"/><i class='bx bxs-user'></i>
+            </div>
+            <div class="box">
+                <input class="box" type="password" placeholder="Password"/><i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div id="forgot">
+                <label>Remamber me</label>
+                <input type="checkbox"/>
+                <a href="#">Forgot password</a>
+            </div>
+            <a href="./ISRO.html"><h3 id="login">Login</h3></a>
+            <p>Dont have an  account? <a href="#">Register</a></p>
+        </form>
+    </div>
+   
+</body>
+</html>

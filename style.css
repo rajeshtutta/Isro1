@@ -1,0 +1,138 @@
+
+ *
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }  
+ body{
+    background-image: url("./images/wbg.jpg");
+    object-fit: cover;
+    box-sizing: border-box;
+    background-position:center;
+    width: 100%;
+    background-position: fixed;
+ }
+.logo{
+        width: 70px;
+        height: 70px;
+}
+.bg1{
+    background-image: url("./images/b.jpg");
+    display:flex;
+    flex-direction: row;
+    padding-left: 7px;
+    text-align: center;
+}
+.menu{
+    position: sticky;
+    top: 10px;
+    z-index: 4;
+}
+
+#heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 110px;
+    color: rgba(244, 130, 7, 0.934);
+    text-align: center;
+    margin-top:15px;
+    background-color: rgb(240, 248, 255);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#logo1{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    right: 1200px;
+    top: 20px;
+    margin-left: 30px;
+}
+#lion{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 1410px;
+    bottom: 85px;
+}
+.wbackground{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    left: 420px;
+    opacity: 50%;
+    z-index: 1;
+}
+.wback{
+    position: relative;
+    left: 420px;
+}
+.footer{
+    background-color: rgba(240, 248, 255, 0.589);
+    text-align: center;
+    margin: 20px;
+    z-index:3;
+    border-radius: 15px;
+}
+.banners{
+    width: 50%;
+    margin-left: 350px;
+}
+.carousel-inner{
+    margin-top: 20px;
+}
+.pageHeading{
+    background-color: rgb(114, 114, 114);
+
+}
+.menu-bar{
+    background-color:rgba(0, 128, 0, 0.686);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.Active, .menu-bar ul li:hover{
+    background-color: #2bab0d;
+    border-radius: 3px;
+}
+.sub-menu{
+    display: none;
+
+}
+.menu-bar ul li:hover  .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover  .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover  .sub-menu ul li{
+    width: 150px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: opx;
+    text-align: left;
+}
+.menu-bar ul li:hover  .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
