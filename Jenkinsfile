@@ -15,12 +15,6 @@ stages {
         }
     }
 
-    stage('BUILD') {
-        steps {
-            sh 'mvn clean package -DskipTests -X'
-        }
-    }
-
     stage('Docker Build') {
         steps {
             sh 'docker build -t $DOCKER_IMAGE:latest .'
@@ -45,7 +39,7 @@ stages {
         steps {
             sh '''
             docker rm -f isro_cont || true
-	    docker run -d -p 1996:8080 --name isro_cont $DOCKER_IMAGE:latest
+	    docker run -d -p 1996:80 --name isro_cont $DOCKER_IMAGE:latest
             '''
         }
     }
